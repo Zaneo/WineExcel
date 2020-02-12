@@ -65,7 +65,7 @@ namespace WineExcel {
 
             }
             catch (Exception e) {
-                Console.WriteLine("An error occurred somewhere, a log will be written to 'ERROR" + DateTime.UtcNow.ToFileTimeUtc() + ".txt'. Please infom the developer");
+                Console.WriteLine("An error occurred somewhere, a log will be written to 'ERROR" + DateTime.UtcNow.ToFileTimeUtc() + ".txt'. Please inform the developer");
                 try {
                     File.WriteAllText("ERROR-" + DateTime.UtcNow.ToFileTimeUtc() + ".txt", e.Message+"\n" + e.StackTrace);
                 }
